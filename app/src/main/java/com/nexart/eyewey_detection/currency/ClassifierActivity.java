@@ -142,7 +142,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                                     if (!lastObject.equals(result.getTitle())) {
                                                     MyApplication.speakerbox.unmute();
                                                     int confidence = (int) (result.getConfidence() * 100f);
-                                                    MyApplication.speakerbox.play("I am " + confidence + "%" + " sure that" + " this is " + result.getTitle());
+                                                    //MyApplication.speakerbox.play("I am " + confidence + "%" + " sure that" + " this is " + result.getTitle());
                                                     Log.e(TAG, "run: " + confidence);
                                                     //predictionTV.setText(result.getTitle() + " : " + confidence + "%");
                                                     lastObject = result.getTitle();

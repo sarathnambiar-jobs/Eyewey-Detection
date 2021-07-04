@@ -21,8 +21,27 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Eyewey"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/raleway_regular"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00000000"
+        android:layout_marginTop="60dp"
         android:orientation="vertical">
 
 
@@ -30,19 +49,19 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="469dp"
+            android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:background="@android:color/black"
             tools:context="org.tensorflow.lite.examples.classification.CameraActivity" />
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="60dp"
             android:layout_alignParentTop="true"
             android:alpha="0"
+            android:elevation="10dp"
             android:background="@color/transparent" />
 
         <TextView
@@ -58,6 +77,25 @@
             android:textColor="#ffffff"
             android:textSize="70sp"
             android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
